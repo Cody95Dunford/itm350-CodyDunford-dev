@@ -1,0 +1,19 @@
+name: coverage
+on: push
+jobs:
+  coverage:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y <your-dependencies>
+
+    - name: Run tests
+      run: |
+        <your-test-command>
+Make sure to replace `<your-dependencies>` and `<your-test-command>` with the actual dependencies and test command for your project. If you need any more help, feel free to ask!
