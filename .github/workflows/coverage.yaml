@@ -1,0 +1,17 @@
+name: coverage
+on: push
+jobs:
+  coverage:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+
+    - name: Run tests
+      run: |
+        <your-test-command>
