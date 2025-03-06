@@ -16,4 +16,3 @@ jobs:
     - name: Run tests
       run: |
         <your-test-command>
-Make sure to replace `<your-dependencies>` and `<your-test-command>` with the actual dependencies and test command for your project. If you need any more help, feel free to ask!
