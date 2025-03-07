@@ -31,7 +31,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@9ec57ed1fcdbf14dcef7dfbe97b2010124a938b7
         with:
-          images: Cody95Dunford/itm350-CodyDunford-bb@sha256:d82c19949a5c70bdbf87be35b9578b6b4974d1fb91d5e1ad90805203265daacb
+          images: cody95dunford/itm350-codydunford-bb:1.0@sha256:d82c19949a5c70bdbf87be35b9578b6b4974d1fb91d5e1ad90805203265daacb
           tags: |
             type=sha  
       
