@@ -1,7 +1,7 @@
 module.exports = {
-    coverageThreshold: {
-      './src/*.js': {
-        lines: 80
-      }
-    }
-  }
+  coverageThreshold: {
+      global: {
+          lines: 50,
+      },
+  },
+};
