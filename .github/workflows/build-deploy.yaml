@@ -5,7 +5,7 @@ on:
     types:
       - closed
 env:
-  REPO_NAME: Cody95Dunford/itm350-CodyDunford-dev
+  REPO_NAME: Cody95Dunford/itm350-CodyDunford-dev 
 
 jobs:
   if_merged:
