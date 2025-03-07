@@ -11,7 +11,8 @@ jobs:
     - name: Install dependencies
       run: |
         sudo apt-get update
-        npm install
+        sudo apt-get install -y npm
+        sudo apt-get install -y Jest
 
     - name: Run tests
       run: |
