@@ -11,14 +11,7 @@ jobs:
     - name: Install dependencies
       run: |
         sudo apt-get update
-        sudo apt-get install -y npm
-        sudo apt-get install -y bootstrap
-        sudo apt-get install -y ejs
-        sudo apt-get install -y express
-        sudo apt-get install -y morgan
-        sudo apt-get install -y vue
-        sudo apt-get install -y vue-resource
-
+        npm install
 
     - name: Run tests
       run: |
