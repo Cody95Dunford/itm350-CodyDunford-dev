@@ -31,7 +31,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@9ec57ed1fcdbf14dcef7dfbe97b2010124a938b7
         with:
-          images: sha256:d82c19949a5c70bdbf87be35b9578b6b4974d1fb91d5e1ad90805203265daacb
+          images: cody95dunford/itm350-codydunford-bb@sha256:d82c19949a5c70bdbf87be35b9578b6b4974d1fb91d5e1ad90805203265daacb
           tags: |
             type=sha  
       
@@ -42,5 +42,5 @@ jobs:
           file: ./bulletin-board-app/Dockerfile
           push: true
           tag_with_sha: true
-          tags: ${{ steps.meta.outputs.tags }}
+          tags: 1.0
           labels: ${{ steps.meta.outputs.labels }}
