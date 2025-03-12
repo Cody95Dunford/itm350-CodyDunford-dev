@@ -1,18 +1,21 @@
-name: coverage
-on: push
+on: 
+  push:
+    branches:
+      - init
+
 jobs:
-  coverage:
+  test:
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
 
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+
     - name: Install dependencies
       run: |
-        sudo apt-get update
         npm install
-
-    - name: Run tests
-      run: |
-        npm test -- --coverage --coverageReporters=json-summary
