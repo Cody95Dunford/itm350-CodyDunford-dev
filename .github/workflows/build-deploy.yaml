@@ -1,11 +1,13 @@
 on:
+  workflow_dispatch:
   pull_request:
     branches: 
-      - main
+      - build-automation
     types:
-      - closed
+      [closed]
 env:
-  REPO_NAME: Cody95Dunford/itm350-CodyDunford-dev 
+  REPO_NAME: cody95dunford/itm350-codydunford-bb
+
 
 jobs:
   if_merged:
@@ -31,7 +33,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@9ec57ed1fcdbf14dcef7dfbe97b2010124a938b7
         with:
-          images: cody95dunford/itm350-codydunford-bb@sha256:d82c19949a5c70bdbf87be35b9578b6b4974d1fb91d5e1ad90805203265daacb
+          images: ${{ env.REPO_NAME }}
           tags: |
             type=sha  
       
