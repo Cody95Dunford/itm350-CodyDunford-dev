@@ -8,6 +8,7 @@ on:
 env:
   REPO_NAME: cody95dunford/itm350-codydunford-bb
 
+
 jobs:
   if_merged:
     if: github.event.pull_request.merged == true
