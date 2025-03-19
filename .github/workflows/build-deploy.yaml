@@ -1,9 +1,10 @@
 on:
+  workflow_dispatch:
   pull_request:
     branches: 
-      - main
+      - build-automation
     types:
-      - closed
+      [closed]
 env:
   REPO_NAME: cody95dunford/itm350-codydunford-bb
 
